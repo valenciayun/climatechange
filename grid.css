@@ -1,0 +1,320 @@
+/* Grids created using Layoutit */
+
+/* ----------------------------- BANNER ----------------------------- */
+
+.banner {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "banner-text banner-image";
+    height: 50em;
+    background-color: black; 
+}
+  
+.banner-text {
+  display: flex; 
+  flex-direction: column;
+  grid-area: banner-text; 
+  /* background-color: green; */
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding: 3em;
+  color: white;
+}
+
+#biggest-title {
+  padding-top: 1em;
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+ 
+#first-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+.banner-image { 
+  display: flex; 
+  justify-content: center;
+  align-content: center;
+  /* grid-area: banner-image; */
+  /* background-color: blueviolet; */
+}
+
+.banner-image img {
+  width: 70%;
+}
+
+
+/* ----------------------------- INTRO ----------------------------- */
+
+.intro {
+  padding: 12em;
+}
+
+#intro-paragraph::first-letter {
+  /* font-size: 130%; */
+  color: black;
+  font-size: 300%;
+  padding: 0px 4px;
+  margin-right: 6px;
+  float: left;
+}
+
+/* ----------------------------- CAUSE ----------------------------- */
+.cause {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "cause-title"
+    "cause-stats"
+    "cause-summary";
+  padding-right: 15em;
+  padding-left: 15em;
+  height: 15em;
+  text-align: center;
+}
+
+.cause-stats {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "cause1 cause2";
+  grid-area: cause-stats;
+}
+
+.cause1 { 
+  grid-area: cause1; 
+  /* background-color: bisque;  */
+  height: 10em;
+  padding-top: 2.5em;
+  padding-right: 1em;
+}
+
+.cause2 { 
+  grid-area: cause2; 
+  padding-top: 2.5em;
+  padding-right: 4em;
+}
+
+/* .cause1:hover {
+  background-color: yellow;
+}
+
+.cause2:hover {
+  background-color: yellow;
+} */
+
+.cause-title { grid-area: cause-title; }
+
+.cause-summary { grid-area: cause-summary; padding: 2%;}
+
+
+/* ----------------------------- CITIES ----------------------------- */
+
+.cities {  display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "cities-image cities-description";
+    padding: 10em 10em 0 10em;
+  /* top right bottom left*/
+}
+
+.cities-image { grid-area: cities-image;}
+  
+.cities-image img {
+ width: 80%;
+}
+.cities-description { grid-area: cities-description; padding:1em;}
+
+ul {
+  padding-left: 1em;
+  list-style-type: none;
+  font-weight: bold;
+  font-family: futura-pt, sans-serif;
+  font-weight: 100;   
+  font-style: normal;
+  font-size: 1em;
+}
+
+#cities-source {
+  padding-left: 2em;
+  padding-top: 1em;
+  font-size: 0.6em;
+}
+  
+/* ----------------------------- URBAN LAND ----------------------------- */
+
+.urban-land {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "urban-graph urban-description";
+    margin: 10em 5em 8em 5em;
+    /* top right bottom left*/
+}
+  
+.urban-graph { grid-area: urban-graph; }
+  
+.urban-description { 
+  grid-area: urban-description; 
+  padding-left: 2em;
+}  
+
+.graph-source {
+  font-size: 0.6em;
+}
+
+/* ----------------------------- ELEVATION ----------------------------- */
+
+.elevation {  
+    text-align: center;
+    height: 60em;
+    background-image: url(/images/drought.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 3em;
+    padding-right: 10em;
+    padding-left: 10em;
+    color: white;
+}
+
+#quote {
+  font-size: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.elevation-stats {  
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "elevation-description stats";
+  padding-top: 3em;
+}
+
+.elevation-description { 
+  grid-area: elevation-description; 
+  text-align: left;
+  justify-content: center;
+  align-content: center; 
+  padding-right: 5em;
+}
+
+
+.stats {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 1.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "stats-title"
+    "stats-numbers";
+  grid-area: stats;
+}
+
+.stats-title { grid-area: stats-title; padding-bottom: 3em;}
+
+.stats-numbers {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "stats1 stats3"
+    "stats2 stats4";
+  grid-area: stats-numbers;
+}
+
+.stats1 { grid-area: stats1; font-size: 1.3em;}
+
+.stats2 { grid-area: stats2; padding-top: 4em;}
+
+.stats3 { grid-area: stats3; font-size: 1.4em; padding-top: 1em;}
+
+.stats4 { grid-area: stats4; padding-top: 3em; font-size: 1em;}
+
+.stats-des {
+  font-size: 0.8em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+
+/* ----------------------------- ENERGY ----------------------------- */
+
+.energy {  display: grid;
+  grid-template-columns: 0.7fr 1.3fr; 
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "energy-description energy-graph";
+  margin: 10em 5em 5em 5em;
+  /* top right bottom left*/
+}
+
+.energy-graph { 
+grid-area: energy-graph; 
+}
+
+.energy-description { 
+grid-area: energy-description; 
+padding-right: 5em;
+padding-top: 5em;
+}
+
+
+/* ----------------------------- MAP ----------------------------- */
+
+.map {
+  padding-top: 5em;
+  padding-bottom: 10em;
+}
+
+.map-description {
+  padding-right: 12em; 
+  padding-left: 12em;
+  text-align: left;
+  display: flex;
+}
+
+.explainer-title {
+  padding-right: 3em;
+}
+
+/* ----------------------------- CONCLUSION ----------------------------- */
+  
+.conclusion {
+  display: flex;
+  padding: 5em;
+  height: 50em;
+  background-image: url(/images/pollution.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.conclusion-title {
+  width: 90%;
+}
+
+.conclusion-description {
+  width: 80%;
+}

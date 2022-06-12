@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Plotly.js -->
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+    
+    <script src="pie-chart.js"></script>
+    <script src="urban-graph.js"></script>
+    <script src="worldmap.js"></script>
+    <script src="energy.js"></script>
+
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="grid.css" rel="stylesheet" type="text/css" />
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-text">
+            <h3 id="first-title">HIDDEN IN THE SHADOW</h3>
+            <h1 id="biggest-title">HOW CLIMATE CHANGE EXACERBATES SOCIAL INEQUALITY</h1>
+            <h4 id="title-quote">"No one is safe until everyone is"</h4>
+        </div>
+        <div class="banner-image">
+            <img src="images/justice.jpg" alt="Justice">
+        </div>
+    </div>
+
+    <div class="intro">
+        <p id="intro-paragraph">Climate change has had profound impacts on our economy, especially in the past decade. The rise in temperature, sea level, and extreme weather has damaged property and critical infrastructure. These generate flow-on effects to human health, productivity, and agriculture . Countries that face these climate change consequences have to deal with disruption in trade and supply chains, which decreases their prosperity growth rate, as well as overall world GDP (Cho, 2019). The sad truth is that there is little to no focus on how these countries are coping with climate change. This is highlighted by the lack of media coverage on the relationship between countries that are responsible for a greater proportion of climate change, and the more vulnerable countries that have to deal with these consequences. Thus, this article will look at how climate change inherently affects the welfare of everyone in the globe, and how it exacerbates the social inequality gap.</p>
+    </div>
+
+    <div class="cause">
+        <div class="cause-stats">
+          <div class="cause1">
+            <h1>95%</h1>
+            <p>probability that it’s due to human activity</p>
+          </div>
+          <div class="cause2">
+            <h1>90%</h1>
+            <p>of world’s carbon emissions are from burning fossil fuels</p>
+          </div>
+        </div>
+        <div class="cause-title">
+            <h1>Causes of Global Warming</h1>
+        </div>
+        <div class="cause-summary">
+            <p>It’s mostly because we are consuming energy ("The Causes of Climate Change", 2022).</p>
+        </div>
+    </div>
+
+    <div class="cities">
+        <div class="cities-image">
+            <img src="images/city.jpg" align="right" alt="City">
+        </div>
+        <div class="cities-description">
+            <h2>Cities consume 78% of the world’s energy</h2>
+            <br>
+            <ul>
+                <li>&#127759; produce more than 60% of greenhouse gas emissions</li>
+                <li>&#127759; account for less than 2% of the earth’s surface</li>
+            </ul>
+            <p id="cities-source">("Generating power", 2022)</p>
+            <br>
+            <p id="cities-paragraph">The largest contributor to climate change is carbon emissions from fossil fuels. We burn fossil fuels for mostly electricity, heat, and transport. Thus, it is not surprising that cities consume 78% of the world’s energy and at the same time produce more than 60% of greenhouse gas emissions ("Generating power", 2022). This brings about an interesting insight to the cause and effect relationship between countries that contribute the most to climate change and countries that suffer from climate change disasters.</p>
+            <br>
+            <p>This article will focus on a few <strong>parts of the world that make</strong> the biggest impact on global warming and <strong>parts of the world that receive</strong> the greatest consequences of global warming. These will be Europe, USA, Australia, China, Indonesia, and African countries. Europe, USA, and Australia were chosen to represent the developed countries, Indonesia and African countries to represent the developing countries, and China due to its significant contribution to global warming.</p>
+        </div>
+    </div>
+
+    <div class="urban-land">
+        <div class="urban-graph">
+            <div id="urban-graph" style="width:100%;height:650px;"></div>
+            <p class="graph-source">Source: <a href="https://ourworldindata.org/grapher/urban-land-area">World Data on Urban Land Area, 2010</a></p>
+        </div>
+        <div class="urban-description">
+            <h3>USA, Europe, and China have the greatest urban land area</h3>
+            <br>
+            <p>Countries that have the largest urban land area speed up global warming. The energy usage of these countries, often wealthy countries, impact the wellbeing of developing countries, such as African countries and the South and Southeast Asian countries. Africa, in particular, emits less than 4% of global emissions, which makes its per capita emissions far lower than Europe and Asia ("Realizing a Climate-Resilient and Prosperous Africa", 2022).</p>
+            <br>
+            <p>Thus, the statistics represented on the left becomes highly critical when we realise how much a small minority of countries’ energy usage impacts less developed statesthat less able to support themselves when faced with climate change calamities. Poorer countries are more vulnerable to climate change disasters because they have the least adaptive capacity such as emergency resources and facilities ("Generating power", 2022). People in these countries face the most disasters because most of the population lives in low elevation coastal zones, where they are more prone to flood and drought ("Poverty and Climate Change", 2002).</p>
+            <br>
+            <p>As a result, mass consumption of energy by wealthy countries has led to extreme weather conditions in places like Africa. In 2020, extreme weather has exacerbated food insecurity, poverty, and displacement in Africa, on top of the socio-economic and health crisis they were dealing with due to the COVID-19 pandemic.  These can lead to disasters and disruptions of economic, ecological, and social systems, which will hamper poverty alleviation efforts and growth in prosperity ("Climate change triggers", 2021). When economic inequality rises due to the increasing gap between the rich and the poor, it compounds unequal access to wealth and income (Holmes, 2022).</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="elevation">
+        <h2 id="quote">Countries that have the least urban land mass are facing more climate change disasters than countries with the greatest urban land mass.</h2>
+        <div class="elevation-stats">
+            <div class="elevation-description">
+                <p>As wealthy countries with high urban land mass continue to consume electricity, it aggravates poverty in poorer countries due to the increase in natural disasters, damaging a large percentage of their wealth and assets. Lower income families have less diversified assets, so the loss of one form of asset can significantly impact the family’s wealth and wellbeing ("Poverty and Climate Change", 2002). As natural disasters rise due to electricity consumption, the economic growth of developing countries slows down while developing countries continue to grow their GDP. According to the World Meteorological Organization (WMO), climate change could further lower gross domestic product (GDP) in sub-Saharan Africa by up to 3% by 2050 ("Climate change triggers", 2021). This brings down family incomes and health status, aggravating social inequality. Inequality harms a country’s economic performance because it increases ill health and reduces the educational performance of the poor (Holmes, 2022). The Parliament of Australia found that children from low-income families do not perform in school as well as children from affluent families, attributing this to lower standards of living and health outcomes faced by the lower income households. These can lead to a reduction in the productivity of the workforce at a microeconomic level. At a macroeconomic level, it can halt growth and lead to instability (Holmes, 2022).</p>
+                <br>
+                <p>This brings down family incomes and health status, aggravating social inequality. Inequality harms a country’s economic performance because it increases ill health and reduces the educational performance of the poor. For example, children from low-income families do not perform as well as children from affluent families, and this is because poor people have worse health than rich people.  These can lead to a reduction in the productivity of the workforce at a microeconomic level. At a macroeconomic level, it can halt growth and lead to instability (aph).</p>
+            </div>
+            <div class="stats">
+                <div class="stats-title">
+                    <h3>Percentage of population living in low-elevation coastal areas ("Generating power", 2022)</h3>
+                </div>
+                <div class="stats-numbers">
+                <div class="stats1">
+                    <h1 class="bigger-n">93%</h1>
+                    <p class="stats-des">of the population in the least developed countries</p>
+                </div>
+                <div class="stats2">
+                    <h2>71%</h2>
+                    <p class="stats-des"> of the population in Latin America & Carribean</p>
+                </div>
+                <div class="stats3">
+                    <h2>80%</h2>
+                    <p class="stats-des">of the population in Asia</p>
+                </div>
+                <div class="stats4">
+                    <h1 class="bigger-n">84%</h1>
+                    <p class="stats-des">of the population in Africa</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="energy">
+        <div class="energy-description">
+            <p>Again, the USA and Europe are one of the highest energy consumers, along with Australia, despite its small urban land area. African countries and Indonesia have once again ranked the lowest compared to these other countries. However, Africa continuously faces natural disasters, which lead to disruptions of economic, ecological, and social systems.</p>
+            <p>In June to July 2019, extreme weather events wreaked havoc on African countries. The tropical cyclones Idai and Kenneth caused significant disasters in Malawi, Mozambique, and Zimbabwe, which resulted in “more than 1,000 deaths and hundreds of thousands of people needing humanitarian assistance as well as a huge loss of infrastructure ("Realizing a Climate-Resilient and Prosperous Africa", 2022).” In 2020, The World Meteorological Organization has estimated that the number of people who have been displaced in the second half of 2020 has brought the total for that year’s number of displacement close to the decade’s average, showing how quickly the number is increasing ("Horn of Africa: Climate-induced Displacement on the Rise", 2022).</p>
+        </div>
+        <div class="energy-graph">
+            <div id="myPlot" style="width:100%;height:650px;"></div>
+            <p class="graph-source">Source: <a href="https://ourworldindata.org/grapher/per-capita-energy-use">World Data on Energy Use Per Person, 2020</a></p>
+        </div>
+    </div>
+
+
+    <div class="map">
+        <div class="map-graph">
+            <div id='myDiv' style="height: 100vh; width: 100vw"><!-- Plotly chart will be drawn inside this DIV --></div>
+        </div>
+        <div class="map-description">
+            <div class="explainer-title">
+                <h2>Countries that contribute least to global warming face the most severe consequences.</h2>
+            </div>
+            <div class="explainer-description">
+                <p>Although the USA, Europe, and China are the greatest contributors to global warming, African countries along with South and Southeast Asian countries suffer the most from climate change disasters. Climate change has impacted many regions of Eastern and Horn of Africa, and it is projected to continuously increase ("Horn of Africa", 2022).</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="conclusion">
+        <div class="conclusion-title">
+            <h1 id="title1">So why should</h1>
+            <h1 id="title2">we care?</h1>
+        </div>
+        <div class="conclusion-description">
+            <p>As the saying goes, “no one is safe until everyone is.” Climate change in the past decade has drastically increased the number of “climate refugees'' who migrate to the nearest safe city or town in times of natural disasters to their homes ("Climate Change and Urban Poverty: Why We Should Care", 2022). Over the past decade, 23 million people have been displaced due to weather-related events such as flooding, hurricanes, and typhoons. The Internal Displacement Monitoring Centre reveals that “in the first half of 2020, approximately 9.8 million people were displaced due to hydrometeorological hazards and disasters, mostly in the Horn of Africa and South and South-East Asia ("Horn of Africa", 2022).”</p>
+            <br>
+            <p>Taking action to slow down climate change is not just for the environment but also for the future of our people. The lives of our own people are in danger, and the exacerbating living conditions of developing countries are hidden behind the media spotlight of ecocentric views on climate change.</p>
+        </div>
+    </div>
+
+
+
+
+    
+</body>
+</html>
